@@ -1,46 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Urban Toast</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <nav class="nav">
-        <ul>
-          <li><a href="#">HOME |</a></li>
-          <li><a href="#">MENU |</a></li>
-          <li><a href="#">DAILY OFFER |</a></li>
-          <li><a href="#">CONTACT US</a></li>
-        </ul>
-      </nav>
-    </header>
-    
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Urban Toast</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">MENU</a></li>
+        <li><a href="#">DAILY OFFER</a></li>
+        <li><a href="#">CONTACT US</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <h1>The good breaskfast</h1>
+  <main class="container">
+    <h1>The good breakfast</h1>
     <p class="paragraph">Here you will find all sorts of delicious treats</p>
 
-    <figure> <video class="video" controls playsinline> <source src="/resources/breakfast-video-2.mp4" type="video/mp4"> Your browser does not support the video element. <a href="/resources/breakfast-video-2.mp4">Download</a> </video> <figcaption>powered by biscuit.</figcaption>
+    <figure class="media">
+      <video class="video" controls playsinline>
+        <source src="resources/breakfast-video-2.webm" type="video/webm">
+        <source src="resources/breakfast-video-2.mp4" type="video/mp4">
+        Your browser does not support the video element. <a href="resources/breakfast-video-2.mp4">Download</a>
+      </video>
+      <figcaption class="media-caption">powered by biscuit.</figcaption>
+    </figure>
+
     <p class="paragraph">From the oven with love</p>
 
     <p class="paragraph-2">
       Our commitment is to use impeccable sourcing and
-      <strong>quality ingredients</strong> to help you code.An ongoing
-      collaboration between the classroom staff and the development team allow
+      <strong>quality ingredients</strong> to help you code. An ongoing
+      collaboration between the classroom staff and the development team allows
       us to iterate our content and give our students the coding 'fruits and
-      vegetables' -mainly made of JavaScript- that they need to grow as a
+      vegetables' - mainly made of JavaScript - that they need to grow as a
       healthy developer.
     </p>
-    <blockquote>
+
+    <blockquote class="quote">
       <p class="paragraph-quote">"Good code & good coffee, everyday"</p>
     </blockquote>
 
     <table class="table">
-      <caption class="caption-table">
-        Table of Coffees and Teas <br>
-      </caption>
+      <caption class="caption-table">Table of Coffees and Teas</caption>
       <thead>
         <tr>
           <th>Coffees</th>
@@ -68,41 +75,39 @@
       </tbody>
     </table>
 
-   <h2 class="h2-form">Reserve here!</h2>
- 
-   <form action="">
-    <label for="name">Customer name</label>
-    <input type="text" id="name" name="name" placeholder="Enter your name" required>
-  <p class="paragraph-form">Choose an option</p>
+    <h2 class="h2-form">Reserve here!</h2>
 
-<label for="">
-  <input type="radio" name="meal" value="Snack" required> Snack
-</label>
+    <form class="reservation-form" action="#" method="post" novalidate>
+      <label for="name">Customer name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
 
-<label for="">
-  <input type="radio" name="meal" value="Breakfast"> Breakfast <br>
-</label>
+      <p class="paragraph-form">Choose an option</p>
 
-<label for="people">Number of people</label>
+      <label class="radio">
+        <input type="radio" name="meal" value="Snack" required> Snack
+      </label>
 
-<select name="people" id="people" required>
-  <option value="">Select</option>
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-</select>
+      <label class="radio">
+        <input type="radio" name="meal" value="Breakfast"> Breakfast
+      </label>
 
-<button type="submit">Send</button>
+      <label for="people">Number of people</label>
+      <select name="people" id="people" required>
+        <option value="">Select</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+      </select>
 
-   </form>
-
-  </body>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </main>
 
   <footer class="footer">
-    <a href="">Contact us</a>
+    <a href="#">Contact us</a>
     <p>Copyright © 2024 Urban Toast</p>
     <p>Opening hours: Monday - Friday, 6:30 - 15:00</p>
   </footer>
+</body>
 </html>
-<!-- Your content goes here ↓↓↓ -->
